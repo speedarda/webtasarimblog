@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kişisel Blog - Salih Arda Katırcıoğlu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Comfortaa", sans-serif;
+            background-color: #f8f9fa;
+            scroll-behavior: smooth;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(13, 27, 42, 0.95);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00c4ff;
+        }
+        section {
+            min-height: 100vh;
+            padding: 100px 20px 60px;
+            text-align: center;
+        }
+        #anasayfa {
+             background-image: url("arkaplan.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #anasayfa img {
+            max-width: 220px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+        }
+        #hakkimda {
+            background: #0d1b2a;
+        }
+        #hakkimda .kart {
+            background: white;
+            max-width: 700px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 340px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        }
+        #iletisim {
+            background-image: url("arkaplan.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #iletisim a {
+    color: white;          
+    text-decoration: none;  
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+#iletisim a:hover {
+    color: #00c4ff;        
+}
+        footer {
+            background: #0d1b2a;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        
+        .sosyal {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    }
+
+    .sosyal a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.sosyal a img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1); 
+}
+
+.sosyal a:hover {
+    transform: scale(1.2);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#anasayfa">Ana Sayfa</a>
+            <a href="#hakkimda">Hakkımda</a>
+            <a href="#iletisim">İletişim</a>
+        </nav>
+    </header>
+
+    <section id="anasayfa">
+        <img src="profil.jpeg" alt="Benim Fotoğrafım">
+        <h1>Merhaba, ben Arda.</h1>
+        <p>Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği 3. Sınıf Öğrencisiyim.</p>
+    </section>
+
+    <section id="hakkimda">
+        <div class="kart">
+            <h2>Ben Kimim?</h2>
+            <p>Ben Arda. 21 Yaşında bir Bilgisayar Mühendisliği öğrencisiyim. Müzik dinlemeyi, plak toplamayı ve farklı ülkelere seyahat etmeyi seviyorum. Şimdiye kadar istemeyerek de olsa web üzerinde kendimi geliştirdim. Bu yaz yaptığım stajda da PHP üzerine çalıştım.  </p>
+            <h3>İlgi Alanlarım</h3>
+             <p>-Veri Analistliği</p>
+             <p>-Tersine Mühendislik</p>
+             <p>-Oyun Geliştirme</p>
+            
+            <iframe src="https://www.youtube.com/embed/8H8lHwMnBUQ" 
+                    title="YouTube video oynatıcı"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section id="iletisim">
+    <h2>İletişim</h2>
+    <p>E-posta: <a href="mailto:speedarda20@gmail.com">speedarda20@gmail.com</a></p>
+    <p>Telefon: <a href="tel:05532927777">0553 292 77 77</a></p>
+
+    <div class="sosyal">
+        <a href="https://www.instagram.com/speedardaa" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/arda-katırcıoğlu-bb0330300" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+        </a>
+    </div>
+</section>
+
+
+
+    <footer>
+        <p>© 2025 | Salih Arda Katırcıoğlu | 2321032046</p>
+    </footer>
+</body>
+</html>
